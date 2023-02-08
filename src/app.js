@@ -1,6 +1,9 @@
 const express = require('express');
 const {engine} = require('express-handlebars');
 const path = require('path')
+
+
+
 const moongose = require('mongoose')
 
 const app = express();
@@ -45,8 +48,8 @@ conectarDb()
 
 
 //Conectar el servidor
-const PORT = 8082
+const puerto = 8082
 
-app.listen(PORT,()=>{
-    console.log('conectado')
+app.listen(puerto,()=>{
+    console.log('conectado'+" "+ puerto)
 })
