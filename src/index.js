@@ -4,7 +4,7 @@ const conectDatabase = require("./database/conectDb");
 require("dotenv").config();
 const app = express();
 
-// conectDatabase();
+conectDatabase();
 
 //Middleware
 app.use(express.json());
