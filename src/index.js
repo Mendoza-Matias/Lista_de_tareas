@@ -1,7 +1,7 @@
 const express = require('express');
 const v1TaskRouter = require("./v1/routes/taskRoutes");
-const conectDatabase = require("./database/conectDb");
 require("dotenv").config();
+const conectDatabase = require("./database/conectDb");
 const app = express();
 
 conectDatabase();
@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
 })
 
 //Routes
-app.use("/api/v1/task",v1TaskRouter);
+app.use("/api/v1/task", v1TaskRouter);
 
 module.exports = app;
